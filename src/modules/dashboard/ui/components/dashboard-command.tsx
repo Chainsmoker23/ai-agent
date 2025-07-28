@@ -1,4 +1,4 @@
-import { CommandDialog } from "@/components/ui/command";
+import { CommandResponsiveDialog } from "@/components/ui/command";
 import { CommandInput } from "@/components/ui/command";
 import { CommandItem, CommandList } from "cmdk";
 import { Dispatch, SetStateAction } from "react";
@@ -12,7 +12,7 @@ export const DashboardCommand =({open ,setOpen}: Props)=> {
 
     return(
         
-    <CommandDialog open={open} onOpenChange={setOpen} >
+    <CommandResponsiveDialog open={open} onOpenChange={setOpen} >
     <CommandInput
     placeholder="Find a meeting or agent"
     />
@@ -21,7 +21,7 @@ export const DashboardCommand =({open ,setOpen}: Props)=> {
             Test
         </CommandItem>
     </CommandList>
-    </CommandDialog>
+    </CommandResponsiveDialog>
         
     );
 };

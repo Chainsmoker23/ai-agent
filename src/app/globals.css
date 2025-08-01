@@ -53,7 +53,7 @@
   --popover-foreground: oklch(0.145 0 0);
   /* primary color (e.g. button ) */
 
-  --primary: oklch(0.63 0.1699 149.21);
+  --primary: oklch(68.243% 0.17966 149.113);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -72,13 +72,13 @@
   --chart-5: oklch(0.769 0.188 70.08);
 
 
-  --sidebar: oklch(0.2 0.0283 174.92);
+  --sidebar: oklch(31.179% 0.00222 146.264);
 
-  --sidebar-foreground: oklch(0.82 0.0057 182.99);
+  --sidebar-foreground: oklch(90.792% 0.00661 186.151);
   --sidebar-primary: oklch(0.205 0 0);
   --sidebar-primary-foreground: oklch(0.985 0 0);
 
-  --sidebar-accent: oklch(0.34 0.0601 171.21);
+  --sidebar-accent: oklch(68.379% 0.0081 197.497);
 
   --sidebar-accent-foreground: oklch(1 0 0);
   --sidebar-border: oklch(0.922 0 0);

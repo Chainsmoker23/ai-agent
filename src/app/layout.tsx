@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { TRPCReactProvider } from "@/trpc/client";
 import { Toaster } from "sonner";
+import {NuqsAdapter} from "nuqs/adapters/next"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <NuqsAdapter>
     <TRPCReactProvider>
     <html lang="en">
       <body
@@ -31,5 +33,6 @@ export default function RootLayout({
       </body>
     </html>
     </TRPCReactProvider>
+    </NuqsAdapter>
   );
 }

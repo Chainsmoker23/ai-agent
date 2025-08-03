@@ -113,7 +113,7 @@ export const agentsRouter = createTRPCRouter({
        .limit(pageSize)
        .offset((page - 1 ) * pageSize )
 
-      const total =  await db 
+      const [total] =  await db 
       .select({count:count() })
       .from(agents)
       .where(
@@ -123,13 +123,13 @@ export const agentsRouter = createTRPCRouter({
         )
       );
 
-     const totalPage = Math.ceil(total.count / pageSize); 
+     const totalPages = Math.ceil(total.count / pageSize); 
 
       return {
         
         items: data,
         total:total.count,
-        totalPage,
+        totalPages,
       };
     }),
    create: protectedProcedure

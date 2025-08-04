@@ -11,8 +11,8 @@ const trpc =useTRPC();
 const {data} = useSuspenseQuery(trpc.meetings.getMany.queryOptions({}));
 
 return(
-    <div>
-        {JSON.stringify(data)}
+    <div className="overflow-x-scroll">
+     
     </div>
  );
 };
